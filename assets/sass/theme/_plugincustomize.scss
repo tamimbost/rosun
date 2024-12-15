@@ -1,0 +1,111 @@
+// Start Nice Select
+.mt__select-box {
+  .mt__header-top-select1 {
+    border: none;
+    &::after {
+      width: 8px;
+      height: 8px;
+      border-bottom: 2px solid $mt__gray;
+      border-right: 2px solid $mt__gray;
+    }
+    .current {
+      color: $mt__gray;
+    }
+    ul {
+      li {
+        color: $mt__gray;
+      }
+    }
+  }
+  .mt__header-top-select2 {
+    background-color: transparent;
+    &::after {
+      border-bottom: 2px solid $mt__white;
+      border-right: 2px solid $mt__white;
+    }
+    .current {
+      color: $mt__white;
+    }
+    span {
+      svg {
+        path {
+          fill: $mt__accent;
+        }
+      }
+    }
+  }
+}
+// End Nice Select
+
+// Start Swiper Pagination
+.mt__hero-area-home-1,
+.mt__hero-area-home-2 {
+  .swiper-pagination1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    bottom: 25px;
+    &.swiper-pagination2{
+      bottom: 45px;
+      .swiper-pagination-bullet{
+        z-index: 1;
+        position: relative;
+      }
+    }
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: $mt__accent;
+      border: 1px solid $mt__dark;
+      opacity: 1;
+      &.swiper-pagination-bullet-active {
+        width: 40px;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+// End Swiper Pagination
+
+// Start Swiper Navigation Arrow
+.mt__shop-by-categories-home-1-swiper-radius-arrow-type-1 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  span {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid $mt__light-gray;
+    transition: linear 0.3s;
+    svg {
+      path {
+        stroke: $mt__dark;
+        transition: linear 0.3s;
+      }
+    }
+    &:hover {
+      background-color: $mt__primary-color;
+      svg {
+        path {
+          stroke: $mt__white;
+        }
+      }
+    }
+  }
+}
+// End Swiper Navigation Arrow
+
+// Start Title and Swiper Arrow Flexing
+.mt__title-wraping-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+// End Title and Swiper Arrow Flexing

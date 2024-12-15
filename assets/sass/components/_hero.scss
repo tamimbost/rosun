@@ -1,0 +1,316 @@
+.mt__hero-inner{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include mt__screen-991{
+        display: block;
+    }
+    .mt__hero-text-content{
+        width: 50%;
+        @include mt__screen-991{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .mt__hero-sub-title{
+            font-size: 16px;
+            font-weight: 600;
+            color: $mt__primary-color;
+            display: inline-block;
+            text-transform: uppercase;
+            margin-bottom: -5px;
+        }
+        h2{
+            font-size: 72px;
+            font-weight: 700;
+            color: $mt__dark;
+            margin-top: -5px;
+            @include mt__screen-1099{
+                font-size: 52px;
+            }
+            span{
+                font-size: 72px;
+                font-weight: 700;
+                color: $mt__dark;
+                font-family: $mt__secondary-font;
+                position: relative;
+                z-index: 1;
+                @include mt__screen-1099{
+                    font-size: 52px;
+                }
+                img{
+                    position: absolute;
+                    left:0;
+                    bottom: 0px;
+                    width: 100%;
+                    z-index: -1;
+                }
+            }
+        }
+        p{
+            font-weight: 500;
+            font-size: 18px;
+            color: $mt__gray;
+            margin-top: 10px;
+            @include mt__screen-1099{
+                br{
+                    display: none;
+                }
+            }
+        }
+        .mt___hero-btn{
+            margin-top: 42px;
+        }
+    }
+}
+
+// Start Home 1 Hero
+.mt__hero-area-home-1{
+    margin-top: 40px;
+    width: 100%;
+    float: right;
+    @include mt__screen-1299{
+        margin-top: 0;
+        float: unset;
+    }
+    .mt__hero-wrapper{
+        .mt__hero-inner-wrap{
+            display: flex;
+            align-items: center;
+            gap:28px;
+            width: 78%;
+            position: relative;
+            float: right;
+            @include mt__screen-1299{
+                width: 100%;
+                float: unset;
+            }
+            @include mt__screen-991{
+                display: block;
+            }
+        }
+    }
+}
+.mt__hero-banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-bottom: 65px;
+    padding-top: 65px;
+    @include mt__screen-575{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mt__hero-banner-content{
+        .mt__hero-inner{
+            .mt__hero-text-content{
+                width: 70%;
+                @include mt__screen-991{
+                    width: 100%;
+                }
+                .mt__hero-sub-title{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: $mt__gray;
+                    font-family: $mt__secondary-font;
+                    margin-bottom: 16px;
+                }
+                h2{
+                    font-size: 48px;
+                    @include mt__screen-575{
+                        font-size: 38px;
+                        br{
+                            display: none;
+                        }
+                    }
+                    span{
+                        font-size: 48px;
+                        color: $mt__primary-color;
+                        @include mt__screen-575{
+                            font-size: 38px;
+                        }
+                    }
+                }
+                p{
+                    @include mt__screen-575{
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .mt__hero-img-banner {
+                img{
+                    @include mt__screen-991{
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+// End Home 1 Hero
+
+// Start Home 1 Hero Category
+.mt__hero-category-bar{
+    border: 1px solid $mt__border-color;
+    background-color: $mt__white;
+    position: absolute;
+    top: 90px;
+    width: 110%;
+    z-index: -100;
+    display: block;
+    @include mt__screen-1299{
+        display: none !important;
+    }
+    &.mt__header-sticky{
+        display: none;
+        top: 48px;
+    }
+    ul{
+        li{
+            width: 100%;
+            padding: 16px 24px;
+            transition: linear 0.3s;
+            &:hover{
+                background-color: $mt__primary-color;
+                a{
+                    color: $mt__white;
+                }
+            }
+            a{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                font-size: 16px;
+                font-weight: 600;
+                color: $mt__dark;
+            }
+        }
+    }
+    .mt__header-categories-btn{
+        font-size: 16px;
+        font-weight: 600;
+        color: $mt__dark;
+        padding: 8px 20px;
+        border-radius: 100px;
+        border: 1px solid $mt__dark;
+        display: inline-block;
+        margin: 16px 24px;
+        background-color: $mt__primary-color;
+        &::after,
+        &::before{
+            background: $mt__white;
+        }
+        &:hover{
+            color: $mt__white;
+            border-color: $mt__white;
+        }
+    }
+    &.mt__mobile-menu-category-bar{
+        width: 100%;
+        @include mt__screen-1299{
+            display: block !important;
+            position: unset;
+        }
+    }
+}
+// End Home 1 Hero Category
+
+// Start Mobile Category Menu
+    .mt__mobile-menu-category-bar{
+        width: 100%;
+        border: 1px solid $mt__border-color;
+        background-color: $mt__white;
+        ul{
+            li{
+                width: 100%;
+                padding: 16px 24px;
+                transition: linear 0.3s;
+                &:hover{
+                    background-color: $mt__primary-color;
+                    a{
+                        color: $mt__white;
+                    }
+                }
+                a{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $mt__dark;
+                }
+            }
+        }
+        .mt__header-categories-btn{
+            font-size: 16px;
+            font-weight: 600;
+            color: $mt__dark;
+            padding: 8px 20px;
+            border-radius: 100px;
+            border: 1px solid $mt__dark;
+            display: inline-block;
+            margin: 16px 24px;
+            background-color: $mt__primary-color;
+            &::after,
+            &::before{
+                background: $mt__white;
+            }
+            &:hover{
+                color: $mt__white;
+                border-color: $mt__white;
+            }
+        }
+    }
+// End Mobile Category Menu
+
+
+// Start Hero Area Home 2
+.mt__hero-area-home-2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    z-index: 1;
+    .mt__hero-wrapper{
+        .mt__hero-2-shep-2{
+            position: absolute;
+            right: 0;
+            top: 5px;
+            animation: mt__bounceX1 3s linear infinite;
+            z-index: -1;
+            @include mt__screen-575{
+                right: -10%;
+            }
+        }
+        .mt__hero-2-shep-4{
+            position: absolute;
+            left: 55%;
+            top: 80px;
+            animation: mt__bounceY 3s linear infinite;
+            z-index: -1;
+            @include mt__screen-575{
+                top: 10px;
+            }
+        }
+        .mt__hero-2-shep-3 {
+            position: absolute;
+            bottom: 60px;
+            left: 35%;
+            animation: mt__bounceX 3s linear infinite;
+            z-index: -1;
+        }
+    }
+}
+// End Hero Area Home 2
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+// Start Button Style 1
+.mt__btn-style-1{
+    background-color: $mt__primary-color;
+    padding: 12px 21px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $mt__dark;
+    position: relative;
+    border: 1px solid $mt__dark;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 1;
+    transition: all 0.3s ease-in;
+    i{
+        margin-right: 3px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50.5%;
+        height: 100%;
+        background: $mt__secondary-color;
+        z-index: -1;
+        transition: all 0.3s ease-in;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50.5%;
+        height: 100%;
+        background: $mt__secondary-color;
+        z-index: -1;
+        transition: all 0.3s ease-in;
+    }
+    &:hover{
+        &::after,
+        &::before{
+            width: 0;
+        }
+        color: $mt__white;
+        border-color: transparent;
+    }
+}
+// End Button Style 1

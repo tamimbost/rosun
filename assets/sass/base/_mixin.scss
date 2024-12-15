@@ -1,0 +1,62 @@
+@mixin mt__screen-1499 {
+  @media (max-width: 1499px) {
+    @content;
+  }
+}
+
+@mixin mt__screen-1399 {
+  @media (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin mt__screen-1299 {
+  @media (max-width: 1299px) {
+    @content;
+  }
+}
+
+@mixin mt__screen-1199 {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin mt__screen-1099 {
+  @media (max-width: 1099px) {
+    @content;
+  }
+}
+
+@mixin mt__screen-991 {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin mt__screen-767 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mt__screen-575 {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin mt__screen-439{
+  @media (max-width:439px){
+    @content;
+  }
+}
+
+
+// Start Extra Responsive Class
+@mixin mt__screen-865{
+  @media (max-width:865px){
+    @content;
+  }
+}
+// End Responsive Class

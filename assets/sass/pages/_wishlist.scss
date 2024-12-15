@@ -1,0 +1,214 @@
+.mt__whislist-area{
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    margin-bottom: 90px;
+    @include mt__screen-991{
+        margin-bottom: 50px;
+    }
+    @include mt__screen-767{
+        margin-bottom: 0px;
+    }
+.mt__table-container {
+
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    border-radius: 8px 8px 8px 8px;
+    @include mt__screen-767{
+        text-align: left;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: $mt__secondary-color;
+    border-bottom: 1px solid $mt__accent;
+    tr{
+        th{
+            &:last-child{
+                text-align: right;
+            }
+        }
+    }
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-size:20px;
+    font-weight: 600;
+    color: $mt__dark;
+    font-family: $mt__secondary-font;
+}
+
+tbody tr {
+    border-bottom: 1px solid $mt__border-color;
+    @include mt__screen-767{
+        padding-bottom: 10px;
+    }
+}
+
+tbody td {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $mt__dark;
+    @include mt__screen-767{
+        padding: 10px;
+    }
+}
+
+.mt__product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include mt__screen-767{
+        display: block;
+    }
+}
+
+.mt__product img {
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.mt__product-info h4 {
+    a{
+        font-size: 16px;
+        font-weight: 600;
+        color: $mt__dark;
+        transition: linear 0.3;
+        &:hover{
+            color: $mt__primary-color;
+        }
+    }
+}
+
+.mt__product-info button {
+    border: none;
+    padding: 5px 10px;
+    margin: 5px 5px 0 0;
+    font-size: 12px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid $mt__border-color;
+    color: $mt__gray;
+    font-weight: 500;
+}
+
+
+.mt__old-price {
+    text-decoration: line-through;
+    font-size: 16px;
+    font-weight: 600;
+    color: $mt__gray;
+}
+
+.mt__new-price {
+    color: $mt__primary-color;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.mt__action-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
+    margin-top: 23px;
+    @include mt__screen-767{
+        justify-content: start;
+        margin-top: 0;
+    }
+}
+
+.mt__add-cart-btn {
+    background-color: $mt__secondary-color;
+    color: $mt__white;
+    border: none;
+    &:hover{
+        color: $mt__dark;
+    }
+    &::after,
+    &::before{
+        background-color: $mt__primary-color;
+    }
+}
+
+.mt__delete-btn {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mt__screen-767{
+        order: 2;
+    }
+}
+
+.mt__delete-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.mt__delete-btn:hover {
+    background-color: $mt__secondary-color;
+    border-color: $mt__secondary-color;
+}
+
+.mt__out-of-stock {
+    color: $mt__gray;
+}
+@include mt__screen-767 {
+    .mt__product-info p {
+        font-size: 12px;
+    }
+
+    .mt__delete-btn {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@include mt__screen-767 {
+    table {
+        font-size: 12px;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        display: block;
+    }
+
+    td {
+        display: block;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+}

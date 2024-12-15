@@ -1,0 +1,243 @@
+// Start Get Into Touch
+.mt__get-in-touch-area{
+    position: relative;
+    padding-top: 120px;
+    @include mt__screen-991{
+        padding-top: 80px;
+    }
+    @include mt__screen-767{
+        padding-top: 60px;
+    }
+    .mt__get-in-touch-wrapper{
+        .mt__get-in-touch-inner{
+            display: flex;
+            align-items: center;
+            @include mt__screen-991{
+                display: block;
+                .mt__get-in-touch-img{
+                    max-width: max-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 40px;
+                }
+            }
+            .mt__get-in-touch-form{
+                width: 46%;
+                border-radius: 20px;
+                background: $mt__white;
+                box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.17);
+                padding: 20px;
+                @include mt__screen-1399{
+                    width: 75%;
+                }
+                @include mt__screen-1199{
+                    width: 85%;
+                }
+                @include mt__screen-1099{
+                    width: 90%;
+                }   
+                @include mt__screen-991{
+                    width: 100%;
+                }
+                form{
+                    padding: 40px;
+                    border:  1px dashed $mt__light-gray;
+                    border-radius: 20px;
+                    @include mt__screen-575{
+                        padding: 20px;
+                    }
+                    .mt__get-in-touch-main-data{
+                        margin-top: 50px;
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+                        margin-bottom: 40px;
+                        @include mt__screen-767{
+                            margin-top: 25px;
+                        }
+                        @include mt__screen-575{
+                            display: block;
+                            .mt__get-in-touch-data{
+                                width: 100%;
+                                &:last-child{
+                                    margin-top: 40px;
+                                }
+                            }
+
+                        }
+                        .mt__get-in-touch-data{
+                            width: 100%;
+                        }
+                    }
+                    label{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $mt__dark;
+                        display: block;
+                        margin-bottom: 8px;
+                    }
+                    input{
+                        border-radius: 4px;
+                        padding: 16px 20px;
+                        border: 1px solid $mt__border-color;
+                        width: 100%;
+                        &::placeholder{
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: $mt__gray;
+                        }
+                    }
+                    .mt__get-in-touch-textfield{
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                        textarea{
+                            border-radius: 4px;
+                            padding: 16px 20px;
+                            border: 1px solid $mt__border-color;
+                            width: 100%;
+                            height: 158px;
+                            &::placeholder{
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: $mt__gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End Get Into Touch
+
+// Start Location
+.mt__loaction-area {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    @include mt__screen-991{
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    @include mt__screen-767{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .mt__location-area-wrapper {
+      .mt__location-area-inner {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        justify-content: center;
+        @include mt__screen-1199{
+          flex-wrap: wrap;
+          row-gap: 24px;
+        }
+        .mt__location-item {
+          display: flex;
+          align-items: start;
+          gap: 20px;
+          padding: 40px 30px;
+          border-radius: 16px;
+          border: 1px solid $mt__border-color;
+          @include mt__screen-1299{
+            padding: 30px 15px;
+          }
+          @include mt__screen-1199{
+            flex-wrap: wrap;
+            row-gap: 24px;
+          }
+          .mt__location-item-text-content {
+            .mt__location-item-title {
+              font-size: 20px;
+              font-weight: 600;
+              color: $mt__dark;
+              margin-top: 0;
+              font-family: $mt__secondary-font;
+            }
+  
+            a {
+              display: block;
+              margin-top: 12px;
+              &:last-child{
+                margin-top: 0;
+              }
+  
+              span {
+                font-size: 20px;
+                font-weight: 500;
+                color: $mt__gray;
+                transition: linear 0.3s;
+              }
+  
+              &:hover {
+                span {
+                  color: $mt__secondary-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}  
+// End Location
+  
+// Start Map Infinity Slider
+  .mt__infinity-slider {
+    position: relative;
+    background-color: $mt__secondary-color;
+  
+    .mt__infinity-sitder {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      animation: 120s mt__banner-slide infinite linear;
+  
+      &:hover {
+        animation-play-state: paused;
+      }
+  
+      p {
+        text-transform: uppercase;
+        -webkit-text-stroke: 1px $mt__white;
+        -webkit-text-fill-color: transparent;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 700;
+        font-family: $mt__primary-font;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-bottom: 0;
+      }
+    }
+  }
+// End Map Infinity Slider
+  
+// Start Map Area
+.mt__map-area{
+    padding-bottom: 120px;
+    @include mt__screen-991{
+      padding-bottom: 80px;
+    }
+    @include mt__screen-767{
+      padding-bottom: 0px;
+    }
+    .mt__map-wrapper{
+      .mt__map-inner{
+        .mt__contact-map{
+          width: 100%;
+          height: 700px;
+          @include mt__screen-991{
+            height: 500px;
+          }
+          @include mt__screen-767{
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+// End Map Area

@@ -1,0 +1,93 @@
+.mt__bread-crumb-area{
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    .mt__bread-crumb-wrapper{
+        .mt__bread-crumb-inner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include mt__screen-767{
+                display: block;
+            }
+            .mt__bread-crumb-text{
+                @include mt__screen-767{
+                    text-align: center;
+                    margin-top: 45px;
+                }
+                .mt__page-name{
+                    font-size: 60px;
+                    font-weight: 600;
+                    color: $mt__dark;
+                    text-transform: capitalize;
+                    span{
+                        font-size: 60px;
+                        font-weight: 600;
+                        color: $mt__primary-color;
+                        font-family: $mt__secondary-font;
+                        text-transform: capitalize;
+                    }
+                }
+                .mt__next-prev-pages{
+                    border: 1px solid $mt__border-color;
+                    border-radius: 100px;
+                    padding: 10px 15px;
+                    max-width: max-content;
+                    margin-top: 30px;
+                    @include mt__screen-767{
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .mt__bread-crumb-home-page{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $mt__dark;
+                        i{
+                            color: $mt__dark;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                        }
+                    }
+                    .mt__bread-crumb-current-page{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $mt__gray;
+                    }
+                }
+            }
+            .mt__bread-crumb-img-content{
+                position: relative;
+                img{
+                    position: relative;
+                    bottom: -88px;
+                    animation: mt__bounceX 3s linear infinite;
+                    @include mt__screen-767{
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+    .mt__bread-crumb-text-sliding{
+        .mt__bread-crumb-text-sliding-inner{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            animation: 150s mt__banner-slide infinite linear;
+            h3{
+                font-size: 60px;
+                font-weight: 700;
+                letter-spacing: 2.4px;
+                text-transform: uppercase;
+                -webkit-text-stroke: 1px rgba(39, 154, 3, 0.16);
+                -webkit-text-fill-color: transparent;
+                white-space: nowrap;
+            }
+        }
+    }
+}

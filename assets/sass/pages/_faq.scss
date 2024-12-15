@@ -1,0 +1,211 @@
+// Start Faq 1 Area
+.mt__faq1-area{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
+    @include mt__screen-991{
+        padding-top: 80px;
+    }
+    @include mt__screen-767{
+        padding-top: 60px;
+    }
+    .mt__faq-wrapper{
+        .mt__faq-inner{
+            .mt__faq-item{
+                display: flex;
+                align-items: center;
+                gap: 60px;
+                @include mt__screen-1099{
+                    gap: 25px;
+                }
+                @include mt__screen-991{
+                    display: block;
+                }
+                .mt__faq-content{
+                    width: 65%;
+                    @include mt__screen-1199{
+                        width: 75%;
+                    }
+                    @include mt__screen-1099{
+                        width: 100%;
+                    }
+                    .mt__title-style-1{
+                        margin-bottom: 40px;
+                    }
+                    .mt__container {
+                        color: $mt__dark;
+                        padding: 24px 20px;
+                        border-radius: 16px;
+                        border: 1px solid $mt__border-color;
+                        background: $mt__white;
+                        margin-bottom: 24px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+            
+                    .mt__question {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: $mt__dark;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        font-family: $mt__secondary-font;
+                    }
+            
+                    .mt__question::after {
+                        content: "\002B";
+                        font-size: 2.2rem;
+                        position: absolute;
+                        right: 20px;
+                        transition: 0.2s;
+                        color: $mt__gray;
+                        padding-left: 30px;
+                    }
+            
+                    .mt__question.mt__active::after {
+                        transform: rotate(45deg);
+                    }
+            
+                    .mt__answercont {
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: 0.3s;
+                    }
+            
+                    .mt__answer {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $mt__gray;
+                        padding-top: 10px;
+                        border-top: 1px dashed $mt__border-color;
+                        margin-top: 15px;
+                    }
+            
+                    // .mt__question.mt__active + .mt__answercont {
+                    //     max-height: 1000px;
+                    // }
+            
+                }
+                .mt__faq-img{
+                    img{
+                        @include mt__screen-991{
+                            margin-top: 40px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    &.mt__faq2-area{
+        @include mt__screen-991{
+            padding-top: 40px;
+        }
+        .mt__faq-wrapper{
+            .mt__faq-inner{
+                .mt__faq-item{
+                    .mt__faq-img{
+                        img{
+                            @include mt__screen-991{
+                                margin-bottom: 40px;
+                                margin-left: auto;
+                                margin-right: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End Faq 1 Area
+
+// Start Qustion Area
+.mt__qustion-area{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
+    @include mt__screen-991{
+        padding-top: 80px;
+    }
+    @include mt__screen-767{
+        padding-top: 60px;
+    }
+    .mt__qustion-area-wrapper{
+        .mt__qustion-inner{
+            display: flex;
+            align-items: center;
+            padding: 48px 110px 48px 60px;
+            border-radius: 20px;
+            gap: 116px;
+            justify-content: space-between;
+            border: 1px solid $mt__border-color;
+            background: linear-gradient(93deg, #F3FFF5 0%, #F0F3FF 47.61%, #FFFCF6 99.19%);
+            @include mt__screen-991{
+                display: block;
+            }
+            @include mt__screen-1299{
+                padding: 48px 48px 48px 48px;
+                gap: 60px;
+            }
+            @include mt__screen-767{
+                padding-inline: 25px;
+            }
+            .mt__qustion-left-content{
+                @include mt__screen-991{
+                    text-align: center;
+                }
+                h4{
+                    font-size: 40px;
+                    font-weight: 700;
+                    color: #000;
+                    font-family: $mt__primary-font;
+                    margin-top: 0;
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $mt__gray;
+                    margin-bottom: 0;
+                    margin-top: 20px;
+                    @include mt__screen-1199{
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .mt__qustion-right-content{
+                border-radius: 20px;
+                background: $mt__white;
+                padding: 50px 65px;
+                text-align: center;
+                @include mt__screen-991{
+                    margin-top: 30px;
+                }
+                @include mt__screen-1399{
+                    padding: 50px 50px;
+                }
+                @include mt__screen-1199{
+                    padding: 25px 25px;
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #000;
+                }
+                a{
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
+// End Qustion Area

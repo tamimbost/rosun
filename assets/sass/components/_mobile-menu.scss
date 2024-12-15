@@ -1,0 +1,272 @@
+// Start Full Mobile Menu Sitebar
+.mt__mobile-menu {
+  background-color: $mt__primary-color;
+  padding: 30px 30px;
+  width: 350px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  z-index: 9999;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+  transition: 0.3s ease-in;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2), 8px 0 30px rgba(0, 0, 0, 0.15);
+  &.mt__mobile-menu-active {
+    right: 0;
+  }
+}
+// End Full Mobile Menu Sitebar
+
+// Start Mobile Menu Icon Click Rotate
+.rotate {
+  rotate: (-90deg);
+}
+// End Mobile Menu Icon Click Rotate
+
+// Start Mobile Menu Search
+.mt__mobile-menu-search {
+  margin-top: 30px;
+  form {
+    input {
+      background-color: $mt__white;
+      border: 1px solid $mt__border-color;
+      padding: 15px;
+      border-radius: 100px;
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+    button {
+      background-color: $mt__white;
+      width: 55px;
+      height: 55px;
+      border: 1px solid $mt__border-color;
+      border-radius: 100px;
+      position: absolute;
+      right: 30px;
+      transition: linear 0.3s;
+      i {
+        color: $mt__gray;
+        transition: linear 0.3s;
+      }
+      &:hover {
+        background-color: $mt__secondary-color;
+        i {
+          color: $mt__dark;
+        }
+      }
+    }
+  }
+}
+// End Mobile Menu Search
+
+// Start Mobile Menu Social Media
+.mt__mobile-menu-social-media {
+  margin-top: 30px;
+  h4 {
+    color: $mt__white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    li {
+      a {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        line-height: 32px;
+        display: inline-block;
+        text-align: center;
+        background-color: $mt__white;
+        transition: linear 0.3s;
+        i {
+          color: $mt__dark;
+          transition: linear 0.3s;
+        }
+        &:hover {
+          background-color: $mt__secondary-color;
+          i {
+            color: $mt__dark;
+          }
+        }
+      }
+    }
+  }
+}
+// End Mobile Menu Social Media
+
+// Start Mobile Menu Copyright
+.mt__mobile-menu-copyright {
+  margin-top: 30px;
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: $mt__white;
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      color: $mt__secondary-color;
+    }
+  }
+}
+// End Mobile Menu Copyright
+
+// Start Mobile Menu Logo
+.mt__mobile-menu-logo {
+  margin-bottom: 20px;
+  a {
+    img {
+      margin: auto;
+    }
+  }
+}
+// End Mobile Menu Logo
+
+// Start Mobile Menu
+.mt__mobile-menu-wrapper {
+  a {
+    font-size: 16px;
+    font-weight: 600;
+    color: $mt__white;
+  }
+  ul {
+    .mt__mobile-sub-menu-inner {
+      margin-bottom: 5px;
+      padding: 15px;
+      transition: linear 0.3s;
+      &:hover {
+        background-color: #10a31f;
+      }
+      a {
+        position: relative;
+        display: block;
+        transition: linear 0.3s;
+        i {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: linear 0.3s;
+        }
+        &:hover {
+          color: $mt__secondary-color;
+          i {
+            color: $mt__secondary-color;
+          }
+        }
+      }
+      .mt__mobile-sub-menu {
+        margin-left: 20px;
+        margin-top: 16px;
+        display: none;
+        li {
+          margin-bottom: 10px;
+          a {
+            display: inline;
+            transition: linear 0.3s;
+            &:hover {
+              color: $mt__secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Mobile Menu
+
+// Start Mobile Menu Tab Button Style
+.mt__menu-tab-btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .nav-tabs {
+    border: none;
+    display: flex;
+    gap: 15px;
+  }
+  .nav-link {
+    background-color: $mt__white;
+    border: none;
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $mt__dark;
+    padding: 12px 20px;
+    z-index: 1;
+    transition: linear 0.3s;
+    &.active {
+      background-color: $mt__secondary-color;
+    }
+  }
+}
+// End Mobile Menu Tab Button Style
+
+// Start Mobile Menu Close Button
+.mt__mobile-menu-close-btn {
+  a {
+    width: 40px;
+    height: 40px;
+    background-color: $mt__white;
+    color: $mt__dark;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: linear 0.3s;
+    display: inline-block;
+    text-align: center;
+    font-weight: 800;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    &:hover {
+      background-color: $mt__secondary-color;
+    }
+  }
+}
+// End Mobile Menu Close Button
+
+// Start Body Overlay
+.mt__overlay {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: rgb(32 35 32 / 48%); 
+  z-index: 999; 
+}
+.mt__overlay:hover {
+  cursor: url("../images/icon/cursor-close.svg"), pointer;
+}
+/* When overlay is active */
+.mt__overlay.active {
+  display: block;
+  left: 0;
+  transition: all 0.8s ease-out 0s;
+  /* Show overlay */
+}
+
+/* Prevent body scrolling when overlay is active */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Adjust z-index for the mobile menu to ensure it's on top of the overlay */
+.mt__mobile-menu-active {
+  z-index: 1000; /* Mobile menu above overlay */
+}
+
+/* Ensure mobile menu is above overlay */
+.mt__mobile-menu {
+  z-index: 1001;
+}
+
+// End Body Overlay

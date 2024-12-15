@@ -1,0 +1,264 @@
+// Start Banner Style 1
+.mt__banner-inner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 34px 35px 42px 35px;
+  overflow: hidden;
+  @include mt__screen-1099{
+    &:first-child{
+      margin-bottom: 30px;
+    }
+  }
+  @include mt__screen-575{
+    text-align: center;
+    .mt__new-arrival{
+      margin: auto;
+      margin-top: 30px;
+    }
+    .mt__banner-1-title{
+      h5{
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  .mt__banner-img-1-home-1 {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    transform: translateY(-50%);
+    animation: mt__bounceX 3s linear infinite;
+    @include mt__screen-1299{
+      right: 20px;
+    }
+    @include mt__screen-1199{
+      right: 0;
+    }
+    @include mt__screen-1099{
+      right: 50px;
+    }
+    @include mt__screen-575{
+      position: relative;
+      left: 17%;
+      transform: unset;
+    }
+  }
+  .mt__banner-img-2-home-1{
+    position: absolute;
+    right: 50px;
+    top: 0;
+    transform: translateY(-50%);
+    animation: mt__bounceY 3s linear infinite;
+    @include mt__screen-1299{
+      right: 15px;
+    }
+    @include mt__screen-1199{
+      right: -45px;
+    }
+    @include mt__screen-1099{
+      right: 50px;
+    }
+    @include mt__screen-575{
+      position: relative;
+      left: 0;
+      transform: unset;
+      animation: mt__bounceX 3s linear infinite;
+    }
+  }
+  .mt__banner-1-home-1-shep1{
+    position: absolute;
+    right: -30px;
+    top: -50px;
+    animation: mt__bounceX1 3s linear infinite;
+  }
+}
+.mt__new-arrival {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background: #f9e79f;
+  width: 150px;
+  height: 30px;
+  margin-bottom: 13px;
+  span {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $mt__secondary-font;
+    color: $mt__dark;
+  }
+}
+.mt__banner-1-title{
+  h5{
+    color: $mt__dark;
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
+.mt__banner-discount-tagline{
+  margin-top: 18px;
+  padding-bottom: 20px;
+  span{
+    font-size: 16px;
+    font-weight: 600;
+    color: $mt__gray;
+  }
+}
+// End Banner Style 1
+
+
+// Start Weekly Hot Deals Banner Home 1 
+.mt__weekly-hot-deals-banner-2-home-1{
+  position: relative;
+  img{
+    border-radius: 15px;
+  }
+  .mt__weekly-hot-deals-banner-info{
+    position: absolute;
+    left: 28px;
+    top: 28px;
+    h5{
+      position: relative;
+      font-size: 40px;
+      font-weight: 700;
+      text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.31);
+      color: $mt__white;
+      &::after{
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        background: $mt__accent;
+        bottom: -6px;
+        left: 0;
+      }
+    }
+    h4{
+      font-size: 32px;
+      font-weight: 600;
+      text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.31);
+      color: $mt__white;
+      margin-top: 30px;
+      margin-bottom: 32px;
+    }
+  }
+}
+// End Weekly Hot Deals Banner Home 1
+
+// Start Home 1 Banner 2
+.mt__home-1-banner-2-title{
+  h3{
+    color: $mt__white;
+    font-size: 48px;
+    font-weight: 600;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.31);
+  }
+}
+.mt__home-1-banner-2-sub-title{
+  p{
+    font-size: 16px;
+    font-weight: 500;
+    color: $mt__white;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  }
+}
+.mt__home-1-banner-2-left-img{
+  width: 526px;
+  height: 526px;
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px dashed $mt__white;
+  @include mt__screen-1299{
+    border: unset;
+  }
+  .mt__home-1-banner-2-left-main-img{
+    animation: mt__rotingAnimation 50s linear infinite ;
+  }
+}
+// End Home 1 Banner 2
+
+// Start Home 1 Banner 3
+.mt__banner-3-item{
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  box-shadow: 0px 1px 8px 0px rgba(219, 219, 219, 0.48);
+  border-radius: 24px;
+  background-color: $mt__white;
+  overflow: hidden;
+  &:hover{
+    cursor: pointer;
+  }
+  .mt__banner-3-info{
+    padding: 24px 0 0 24px;
+    h3{
+      color: $mt__primary-color;
+      font-size: 40px;
+      font-weight: 700;
+    }
+    h4{
+      color: $mt__dark;
+      font-size: 30px;
+      font-weight: 700;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    a{
+      font-size: 18px;
+      font-weight: 600;
+      color: $mt__gray;
+      transition: linear 0.3s;
+      span{
+        svg{
+          path{
+            fill:$mt__gray;
+            transition: linear 0.3s;
+          }
+        }
+      }
+      &:hover{
+        color: $mt__primary-color;
+        span{
+          svg{
+            path{
+              fill: $mt__primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Home 1 Banner 3
+
+
+// Start Blog Part 2 Sitebar Banner
+.mt__blog-part-2-item-right-site{
+  position: relative;
+  @include mt__screen-1399{
+    width: 70%;
+  }
+  @include mt__screen-1099{
+    width: 100%;
+  }
+  .mt__blog-part-2-right-banner-img{
+    position: relative;
+  }
+  .mt__blog-part-2-right-banner-info{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    h5{
+      color: $mt__primary-color;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    p{
+      font-size: 18px;
+      font-weight: 500;
+      color: $mt__gray;
+    }
+  }
+}
+// End Blog Part 2 Sitebar Banner

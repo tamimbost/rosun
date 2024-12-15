@@ -1,0 +1,420 @@
+// Start About Our Site Area
+.mt__about-our-site{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:130px;
+    padding-bottom: 150px;
+    @include mt__screen-991{
+        padding-top: 80px;
+        padding-bottom: 80;
+    }
+    @include mt__screen-767{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .mt__about-our-site-wrapper{
+        .mt__about-our-site-inner{
+            display: flex;
+            align-items: center;
+            gap: 54px;
+            @include mt__screen-1099{
+                display: block;
+            }
+            .mt__about-our-site-img{
+                position: relative;
+                @include mt__screen-1299{
+                    width: 50%;
+                }
+                @include mt__screen-1099{
+                    width: 100%;
+                    max-width: max-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .mt__about-our-site-circle-roting{
+                    position: absolute;
+                    left: 0;
+                    bottom: -56px;
+                    @include mt__screen-1199{
+                        left: -16px;
+                        bottom: -73px;                    
+                    }
+                    span{
+                        position: relative;
+                        svg{
+                            position: absolute;
+                            left: 2%;
+                            animation: mt__circle-text-rotate 20s linear infinite reverse;
+                        }
+                    }
+                }
+            }
+            .mt__about-our-site-text-content{
+                @include mt__screen-1299{
+                    width: 50%;
+                }
+                @include mt__screen-1099{
+                    width: 100%;
+                    margin-top: 110px;
+                }
+                .mt__about-our-site-main-title{
+                    font-size: 40px;
+                    font-weight: 700;
+                    color: $mt__dark;
+                    margin-bottom: 25px;
+                    line-height: 60px;
+                    @include mt__screen-1099{
+                        line-height: 50px;
+                        br{
+                            display: none;
+                        }
+                    }
+                    .mt__about-our-site-title-color{
+                        font-size: 40px;
+                        font-weight: 700;
+                        color: $mt__primary-color;
+                        font-family: $mt__secondary-font;
+                    }
+                }
+                .mt__about-our-site-frist-peragraph,
+                .mt__about-our-site-second-peragraph{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $mt__gray;
+                    @include mt__screen-1299{
+                        br{
+                            display: none;
+                        }
+                    }
+                    &.mt__about-our-site-second-peragraph{
+                        margin-top: 20px;
+                        margin-bottom: 43px;
+                    }
+                }
+                ul{
+                    border-top: 1px dashed $mt__border-color;
+                    max-width: max-content;
+                    padding-top: 25px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        margin-bottom: 16px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        span{
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: $mt__dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End About Our Site Area
+
+// Start Counter Up Area
+.mt__count-up-area{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .mt__count-up-wrapper{
+        .mt__count-up-inner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include mt__screen-991{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 25px;
+            }
+            @include mt__screen-575{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .mt__counter-up-item{
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    background-color: $mt__light-gray;
+                    width: 1px;
+                    height: 80px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -100%;
+                    @include mt__screen-1299{
+                        right: -75%;
+                    }
+                    @include mt__screen-1099{
+                        right: -45%;
+                    }
+                    @include mt__screen-991{
+                        display: none;
+                    }
+                }
+                &:last-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+                h3{
+                    font-size: 60px;
+                    font-weight: 700;
+                    color: $mt__dark;
+                    @include mt__screen-991{
+                        text-align: center;
+                    }
+                    span{
+                        font-size: 60px;
+                        font-weight: 700;
+                        color: $mt__dark;
+                        font-family: $mt__secondary-font;
+                    }
+                }
+                .mt__count-up-icon{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    @include mt__screen-991{
+                        justify-content: center;
+                    }
+                    span{
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $mt__gray;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+// End Counter Up Area
+
+// Start Why Choose Area
+.mt__why-choose-area{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    @include mt__screen-991{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @include mt__screen-767{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .mt__why-choose-wrapper{
+        .mt__why-choose-inner{
+            display: flex;
+            @include mt__screen-991{
+                display: block;
+            }
+            .mt__why-choose-img{
+                @include mt__screen-991{
+                    max-width: max-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .mt__why-choose-text-content{
+                border-radius: 20px;
+                border: 1px solid $mt__light-gray;
+                background: linear-gradient(131deg, #F7FFF1 0%, #FFF 50%, #FFFAF3 100%);
+                padding: 40px;
+                position: absolute;
+                width: 40%;
+                top: 50%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+                @include mt__screen-1399{
+                    width: 60%;
+                }
+                @include mt__screen-1099{
+                    width: 70%;
+                }
+                @include mt__screen-991{
+                    position: relative;
+                    width: 100%;
+                    transform: unset;
+                    left: 0;
+                    top: 0;
+                    margin-top: 25px;
+                }
+                .mt__why-choose-text-shep{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                .mt__why-choose-text-item-inner{
+                    display: grid;
+                    align-items: center;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 44px;
+                    margin-top: 55px;
+                    @include mt__screen-575{
+                        grid-template-columns: 1fr;
+                    }
+                    @include mt__screen-767{
+                        gap: 30px;
+                        margin-top: 35px;
+                    }
+                    .mt__why-choose-item{
+                        .mt__why-choose-item-icon{
+                            width: 60px;
+                            height: 60px;
+                            display: inline-block;
+                            text-align: center;
+                            border: 1px solid $mt__light-gray;
+                            border-radius: 50%;
+                            position: relative;
+                            margin-bottom: 18px;
+                            img{
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                        .mt__why-choose-item-title{
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: $mt__dark;
+                        }
+                        .mt__why-choose-discription{
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: $mt__gray;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End Why Choose Area
+
+// Start Team Area
+.mt__team-area{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 120px;
+    @include mt__screen-991{
+        padding-bottom: 90px;
+    }
+    @include mt__screen-767{
+        padding-bottom: 60px;
+    }
+    .mt__team-area-wrapper{
+        .mt__title-style-1{
+            text-align: center;
+            .mt__title-frist-star{
+                margin-right: 12px;
+            }
+        }
+        .mt__team-area-inner{
+            margin-top: 40px;
+            .mt__team-item-inner{
+                position: relative;
+                cursor: pointer;
+                @include mt__screen-575{
+                    max-width: max-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                &:hover{
+                    .mt__team-member-name-shep{
+                        opacity: 0;
+                    }
+                    .mt__team-info{
+                       scale: 1;
+                       opacity: 1;
+                       visibility: visible;
+                    }
+                }
+                .mt__team-member-name-shep{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    transition: all 0.3s ease;
+                }
+                .mt__team-info{
+                    border-radius: 16px;
+                    background: rgba(11, 96, 65, 0.9);
+                    position: absolute;
+                    top: 50%;
+                    width: 80%;
+                    margin: auto;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    padding: 55px;
+                    scale: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s ease-in-out;
+                    @include mt__screen-1399{
+                        padding: 35px;
+                    }
+                    .mt__team-member-name{
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #fff;
+                        text-align: center;
+                    }
+                    .mt__team-member-regi{
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $mt__white;
+                        text-align: center;
+                        display: block;
+                    }
+                    .mt__team-member-social-media{
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        justify-content: center;
+                        margin-top: 32px;
+                        a{
+                            width: 32px;
+                            height: 32px;
+                            line-height: 30px;
+                            display: inline-block;
+                            text-align: center;
+                            border: 1px solid $mt__white;
+                            color: $mt__white;
+                            transition: linear 0.3s;
+                            border-radius: 50%;
+                            &:hover{
+                                background-color: $mt__secondary-color;
+                                color: $mt__dark;
+                                border-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+            .mt__shop-by-categories-home-1-swiper-radius-arrow-type-1{
+                justify-content: end;
+                margin-top: 30px;
+                @include mt__screen-575{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+// End Team Area

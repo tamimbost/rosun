@@ -1,0 +1,248 @@
+// Start Login Area
+.mt__login-form-area {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 120px;
+  @include mt__screen-991{
+    padding-top: 80px;
+  }
+  @include mt__screen-767{
+    padding-top: 60px;
+  }
+  .mt__login-form-wrapper {
+    .mt__login-form-inner {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 20px;
+      border: 3px solid $mt__white;
+      background: linear-gradient(241deg, #fff 0%, #fbfbfb 99.32%);
+      box-shadow: 0px 0px 19px 0px #e8e5ef;
+      width: 80%;
+      margin: auto;
+      padding: 70px 80px;
+      @include mt__screen-1399{
+        width: 100%;
+      }
+      @include mt__screen-1099{
+        padding: 60px 50px;
+      }
+      @include mt__screen-991{
+        padding: 40px 30px;
+        gap: 50px;
+      }
+      @include mt__screen-865{
+        display: block;
+      }
+      @include mt__screen-575{
+        padding: 30px 20px;
+      }
+      .mt__login-left-input-content {
+        width: 50%;
+        @include mt__screen-865{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        form {
+          .mt__login-form-title {
+            text-align: center;
+            font-size: 38px;
+            font-weight: 700;
+            color: $mt__dark;
+            font-family: $mt__primary-font;
+          }
+          .mt__login-form-sub-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: $mt__gray;
+            text-align: center;
+          }
+          input {
+            width: 100%;
+            padding: 16px 20px;
+            border-radius: 12px;
+            border: 1px solid $mt__border-color;
+            background: $mt__white;
+            &::placeholder {
+              font-size: 16px;
+              font-weight: 500;
+              color: $mt__gray;
+            }
+          }
+          .mt__login-form-remeber-flexing {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 12px;
+            @include mt__screen-575{
+                flex-wrap: wrap;
+            }
+            .mt__login-form-checkbox {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              input[type="checkbox"] {
+                max-width: max-content;
+              }
+              label {
+                font-size: 16px;
+                font-weight: 500;
+                color: $mt__gray;
+              }
+            }
+            a {
+              font-size: 16px;
+              font-weight: 500;
+              color: $mt__gray;
+              transition: linear 0.3s;
+              &:hover {
+                color: $mt__dark;
+              }
+            }
+          }
+          input[type="submit"] {
+            background-color: $mt__primary-color;
+            color: $mt__white;
+            text-align: center;
+            width: 100%;
+            transition: linear 0.3s;
+            margin-top: 45px;
+            &:hover {
+              background-color: $mt__secondary-color;
+              color: $mt__dark;
+            }
+          }
+          .mt__login-form-meta-text {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: $mt__gray;
+            position: relative;
+            margin-top: 30px;
+            &::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 16px;
+              height: 1px;
+              width: 32%;
+              background-color: #eaeaef;
+              @include mt__screen-575{
+                display: none;
+              }
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 16px;
+              height: 1px;
+              width: 32%;
+              background-color: #eaeaef;
+              @include mt__screen-575{
+                display: none;
+              }
+            }
+          }
+        }
+        .mt__another-login-social-media {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            justify-content: center;
+            @include mt__screen-575{
+                flex-wrap: wrap;
+                row-gap: 18px;
+            }
+            .mt__another-login-social-media-item{
+                padding: 22px 35px;
+                border: 1px solid $mt__border-color;
+                border-radius: 16px;
+                background-color: $mt__white;
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    span {
+                      font-size: 16px;
+                      font-weight: 500;
+                      color: $mt__dark;
+                    }
+                  }
+            }
+        }
+        .mt__another-swiching-part{
+            margin-top: 35px;
+            p{
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                color: $mt__gray;
+                a{
+                    color: $mt__dark;
+                    text-decoration: underline;
+                    transition: linear 0.3s;
+                    &:hover{
+                        color: $mt__primary-color;
+                    }
+                }
+            }
+        }
+      }
+      .mt__login-right-img{
+        img{
+            @include mt__screen-865{
+                margin: auto;
+            }
+        }
+      }
+    }
+  }
+}
+// End Login Area
+
+// Start Eye Button
+.mt__login-form-password-container {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+.mt__password-input {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  font-size: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.mt__password-input:focus {
+  border-color: #94a3b8;
+}
+
+.mt__password-input::placeholder {
+  color: #94a3b8;
+}
+
+.mt__toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #64748b;
+}
+
+.mt__toggle-password svg {
+  width: 20px;
+  height: 20px;
+}
+// End Eye Button
